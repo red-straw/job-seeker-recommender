@@ -1,4 +1,4 @@
-// 피벗 선택 전략별 퀵정렬 성능 비교 (MFC 앱과 동일한 정렬·가중치 로직, 표준 C++)
+// 피벗 선택 전략별 퀵정렬 성능 비교 (MFC 앱과 동일한 정렬/가중치 로직, 표준 C++)
 //
 // 빌드: g++ -O2 -std=c++17 pivot_benchmark.cpp -o pivot_benchmark
 // 실행: ./pivot_benchmark ../data/job_seekers.csv
@@ -87,7 +87,7 @@ void quickSortMean(std::vector<JobSeeker>& a, int low, int high) {
         mn = std::min(mn, a[k].score);
         mx = std::max(mx, a[k].score);
     }
-    if (mn == mx) return;  // 모두 같은 점수 → 이미 정렬됨
+    if (mn == mx) return;  // 모두 같은 점수 -> 이미 정렬됨
     double pivot = std::clamp(sum / (high - low + 1), mn, mx);  // 부동소수 오차로 범위를 벗어나지 않게
     int i;
     int j = partition(a, low, high, pivot, i);
