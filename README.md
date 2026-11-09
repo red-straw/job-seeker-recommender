@@ -68,3 +68,7 @@ g++ -O2 -std=c++17 pivot_benchmark.cpp -o pivot_benchmark
 ## 기술 스택
 
 C++ · MFC (Visual Studio) · MySQL
+
+## 라이선스
+
+팀 프로젝트 결과물로, 저작권은 팀원 공동에게 있습니다. 포트폴리오 열람 목적으로 공개하며 별도의 사용 허가는 부여하지 않습니다. 구직자 데이터는 프로그램으로 생성한 가상 데이터입니다.
