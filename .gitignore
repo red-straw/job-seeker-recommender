@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.aps
+*.obj
+*.pdb
+*.ilk
+*.exe
+
+# 실행 시 생성되는 결과 파일
+sorted_*.csv
+new_job_seekers.csv
+benchmark/pivot_benchmark
